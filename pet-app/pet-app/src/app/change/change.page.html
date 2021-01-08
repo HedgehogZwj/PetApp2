@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/folder/Home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>change</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div style="text-align: center;">
+      <img style="height: 80px;" src="/assets/imgs/add.png">
+    </div>
+    <ion-item>
+      <ion-label position="floating">输入宠物姓名</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">输入宠物年龄</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">输入宠物性格</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>性别</ion-label>
+      <ion-select [value]="['boy']">
+        <ion-select-option value="boy">Boy</ion-select-option>
+        <ion-select-option value="girl">Girl</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>类型</ion-label>
+      <ion-select [value]="['dog']">
+        <ion-select-option value="cat">Cat</ion-select-option>
+        <ion-select-option value="dog">Dog</ion-select-option>
+        <ion-select-option value="bird">Bird</ion-select-option>
+        <ion-select-option value="rabit">Rabit</ion-select-option>
+        <ion-select-option value="pig">Pig</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-button color='secondary' >添加</ion-button>
+    <ion-button color="primary">删除</ion-button>
+    <ion-button color="tertiary">修改</ion-button>
+    
+    
+    
+</ion-content>
